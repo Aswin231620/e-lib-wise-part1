@@ -1,0 +1,35 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // Users collection
+    match /Users/{userId} {
+      // Users can read their own document
+      allow read: if request.auth != null && request.auth.uid == userId;
+      // Users can create their own document on first login
+      allow create: if request.auth != null && request.auth.uid == userId;
+      // Only admins can update user roles
+      allow update: if request.auth != null && 
+        get(/databases/$(database)/documents/Users/$(request.auth.uid)).data.role == 'admin';
+    }
+    
+    // Materials collection
+    match /materials/{materialId} {
+      // Anyone authenticated can read approved materials
+      allow read: if request.auth != null && resource.data.approved == true;
+      
+      // Admins can read all materials (including pending)
+      allow read: if request.auth != null && 
+        get(/databases/$(database)/documents/Users/$(request.auth.uid)).data.role == 'admin';
+      
+      // Authenticated users can create materials (must set approved=false)
+      allow create: if (request.auth != null && 
+        request.resource.data.uploadedBy == request.auth.uid) ||
+        // Allow automatic seeding
+        (request.resource.data.uploadedBy == 'system_seeder');
+      
+      // Only admins can update or delete materials
+      allow update, delete: if isAdmin();request.auth != null && 
+        get(/databases/$(database)/documents/Users/$(request.auth.uid)).data.role == 'admin';
+    }
+  }
+}

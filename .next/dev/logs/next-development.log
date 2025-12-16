@@ -1,0 +1,20 @@
+[00:00:02.435] Server  LOG      ✓ Ready in 1605ms
+[00:00:11.780] Server  LOG      ○ Compiling / ...
+[00:00:24.039] Server  LOG     [v0] user-context.tsx loading...
+[00:00:24.041] Server  LOG     [v0] user-context.tsx imports successful, auth: true "db:" true
+[00:00:24.775] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:25.206] Browser LOG     [v0] user-context.tsx loading...
+[00:00:25.206] Browser LOG     [v0] user-context.tsx imports successful, auth: true db: true
+[00:00:25.206] Browser LOG     🚀 DbSeeder mounted
+[00:00:25.206] Browser LOG     🔥 Seeder function started
+[00:00:25.337] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:00:25.337] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[00:00:25.337] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1765619374458}
+[00:00:27.001] Browser LOG     ✅ Firestore already seeded
+[00:00:31.426] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/login color: rgb(120, 120, 120) color: inherit {"dp":"/login","o":"http://localhost:3000/login","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1765619380545}
+[00:00:42.009] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1765619390173}
+[00:00:57.801] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/general color: rgb(120, 120, 120) color: inherit {"dp":"/general","o":"http://localhost:3000/general","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1765619406909}
+[00:01:04.107] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/viewer?id=f3836b69-7e24-4d98-b501-bc927282ac89 color: rgb(120, 120, 120) color: inherit {"dp":"/viewer","o":"http://localhost:3000/viewer?id=f3836b69-7e24-4d98-b501-bc927282ac89","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1765619413225}
+[00:01:05.316] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1765619414420}
+[00:01:11.578] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/general color: rgb(120, 120, 120) color: inherit {"dp":"/general","o":"http://localhost:3000/general","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1765619420690}
+[00:01:40.446] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/upload color: rgb(120, 120, 120) color: inherit {"dp":"/upload","o":"http://localhost:3000/upload","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1765619449484}
